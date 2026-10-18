@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" width="300" height="72" role="img" aria-label="PsychGyan - Better Mind, Brighter Future (White / Dark Background Variant)">
+  <!--
+    PsychGyan Redesigned Brand Identity (Dark Background Variant)
+    Concept: Cohesive Human Profile & Flourishing Mind-Growth Leaf
+    Palette: Cream (#FFFAF0), Bright Blue (#60A5FA), Green (#34D399), Orange (#FB923C)
+    Status: Proposed Redesign Awaiting Founder Review
+  -->
+  <defs>
+    <linearGradient id="pgLeafGradDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="60%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#6EE7B7" />
+    </linearGradient>
+    <linearGradient id="pgProfileGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cohesive Integrated Emblem -->
+  <g id="brand-mark-dark" transform="translate(6, 6)">
+    <!-- Base Frame with subtle boundary outline for dark navy contrast -->
+    <rect x="0" y="0" width="60" height="60" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Human Profile Arc -->
+    <path d="M 28 8 
+             C 38 8 46 15 48 24 
+             C 49 28 47 33 44 36 
+             C 43 38 43 40 44 42 
+             C 45 44 43 46 41 46 
+             C 39 46 38 48 37 50 
+             C 34 52 28 53 23 50 
+             C 17 46 14 39 14 31 
+             C 14 18 20 8 28 8 Z" 
+          fill="url(#pgProfileGradDark)" opacity="0.95" />
+
+    <!-- Flourishing Leaf (Springing from the Cranium) -->
+    <path d="M 28 10 
+             C 33 6 42 7 46 14 
+             C 48 19 47 25 43 29 
+             C 38 34 32 37 28 46 
+             C 27 38 29 28 26 21 
+             C 24 16 25 12 28 10 Z" 
+          fill="url(#pgLeafGradDark)" />
+
+    <!-- Secondary Emerging Growth Shoot -->
+    <path d="M 31 16 
+             C 36 14 41 18 41 23 
+             C 41 28 36 32 32 35 
+             C 32 29 33 22 31 16 Z" 
+          fill="#A7F3D0" opacity="0.95" />
+
+    <!-- Intellect Spark (Orange Accent Core) -->
+    <circle cx="34" cy="22" r="3.75" fill="#FB923C" />
+    
+    <!-- Fine Neural Line -->
+    <path d="M 28 44 C 29 34 33 28 39 24" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.9" />
+  </g>
+
+  <!-- Wordmark & Tagline for Dark Surfaces -->
+  <g id="brand-typography-dark">
+    <!-- "Psych" in Warm Cream, "Gyan" in Bright Blue -->
+    <text x="80" y="38" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.03em" fill="#FFFAF0">
+      Psych<tspan fill="#60A5FA">Gyan</tspan>
+    </text>
+
+    <!-- Tagline in Slate-Light with High Legibility -->
+    <text x="81" y="55" font-family="'Source Sans 3', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="0.12em" fill="#94A3B8">
+      BETTER MIND • BRIGHTER FUTURE
+    </text>
+  </g>
+</svg>

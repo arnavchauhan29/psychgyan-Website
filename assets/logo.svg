@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" width="300" height="72" role="img" aria-label="PsychGyan - Better Mind, Brighter Future">
+  <!--
+    PsychGyan Redesigned Brand Identity
+    Concept: Cohesive Human Profile & Flourishing Mind-Growth Leaf
+    Palette: Navy (#0F172A), Primary Blue (#1E40AF), Bright Blue (#3B82F6), Green (#10B981), Orange (#F97316)
+    Status: Proposed Redesign Awaiting Founder Review
+  -->
+  <defs>
+    <linearGradient id="pgLeafGradLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="60%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="pgProfileGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="pgOrangeSparkLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cohesive Integrated Emblem (Profile + Flourishing Leaf) -->
+  <g id="brand-mark" transform="translate(6, 6)">
+    <!-- Base Structural Frame: Soft Octagonal / Squircle Anchor for Instant Visual Weight -->
+    <rect x="0" y="0" width="60" height="60" rx="14" fill="#0F172A" />
+    
+    <!-- Human Profile Flowing into the Growth Crest -->
+    <!-- The outer path traces the forehead, nasal bridge, philtrum, chin, and jawline, sweeping up into an arching leaf -->
+    <path d="M 28 8 
+             C 38 8 46 15 48 24 
+             C 49 28 47 33 44 36 
+             C 43 38 43 40 44 42 
+             C 45 44 43 46 41 46 
+             C 39 46 38 48 37 50 
+             C 34 52 28 53 23 50 
+             C 17 46 14 39 14 31 
+             C 14 18 20 8 28 8 Z" 
+          fill="url(#pgProfileGradLight)" opacity="0.95" />
+
+    <!-- Flourishing Mind-Growth Leaf (Springing from the Cranium) -->
+    <path d="M 28 10 
+             C 33 6 42 7 46 14 
+             C 48 19 47 25 43 29 
+             C 38 34 32 37 28 46 
+             C 27 38 29 28 26 21 
+             C 24 16 25 12 28 10 Z" 
+          fill="url(#pgLeafGradLight)" />
+
+    <!-- Secondary Emerging Growth Shoot / Inner Harmony Petal -->
+    <path d="M 31 16 
+             C 36 14 41 18 41 23 
+             C 41 28 36 32 32 35 
+             C 32 29 33 22 31 16 Z" 
+          fill="#34D399" opacity="0.9" />
+
+    <!-- Intellect Spark / Cognitive Clarity Core (Orange Focal Point) -->
+    <circle cx="34" cy="22" r="3.75" fill="url(#pgOrangeSparkLight)" />
+    
+    <!-- Fine Structural Neural Curve (Cream Accent Line) -->
+    <path d="M 28 44 C 29 34 33 28 39 24" stroke="#FFFAF0" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8" />
+  </g>
+
+  <!-- Wordmark & Tagline -->
+  <g id="brand-typography">
+    <!-- "Psych" in Navy, "Gyan" in Vibrant Primary Blue -->
+    <text x="80" y="38" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.03em" fill="#0F172A">
+      Psych<tspan fill="#1E40AF">Gyan</tspan>
+    </text>
+
+    <!-- Tagline: Precise, Tracked, and High-Contrast -->
+    <text x="81" y="55" font-family="'Source Sans 3', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="0.12em" fill="#475569">
+      BETTER MIND • BRIGHTER FUTURE
+    </text>
+  </g>
+</svg>

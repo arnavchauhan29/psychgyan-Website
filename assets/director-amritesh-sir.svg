@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Illustrative portrait of Amritesh Sir, Director, RPS Academy">
+  <!-- Illustrative Representation (Not an actual photograph) -->
+  <defs>
+    <linearGradient id="bgGradAmritesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7ED" />
+      <stop offset="100%" stop-color="#FED7AA" />
+    </linearGradient>
+    <clipPath id="circleClipAmritesh">
+      <circle cx="80" cy="80" r="75" />
+    </clipPath>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="80" cy="80" r="78" fill="#F97316" />
+  <circle cx="80" cy="80" r="75" fill="url(#bgGradAmritesh)" />
+
+  <g clip-path="url(#circleClipAmritesh)">
+    <!-- Formal Blazer / Shoulders -->
+    <path d="M 20 160 C 20 120 45 105 80 105 C 115 105 140 120 140 160 Z" fill="#1E293B" />
+    <!-- Shirt / Nehru Collar Detail -->
+    <polygon points="80,116 68,104 74,98 80,106 86,98 92,104" fill="#FFFFFF" />
+    <path d="M 78 106 L 82 106 L 82 160 L 78 160 Z" fill="#F97316" />
+    <!-- Neck -->
+    <rect x="71" y="80" width="18" height="24" fill="#DFA175" rx="3" />
+    <!-- Head / Face -->
+    <ellipse cx="80" cy="65" rx="27" ry="32" fill="#E8A67B" />
+    <!-- Hair -->
+    <path d="M 50 54 C 50 28 64 24 80 24 C 96 24 110 28 110 54 C 110 60 106 42 98 36 C 90 32 70 32 62 36 C 54 42 50 60 50 54 Z" fill="#0F172A" />
+    <!-- Ears -->
+    <ellipse cx="52" cy="66" rx="4" ry="7" fill="#D38F63" />
+    <ellipse cx="108" cy="66" rx="4" ry="7" fill="#D38F63" />
+    <!-- Eyebrows -->
+    <path d="M 62 54 Q 70 50 76 54" stroke="#0F172A" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 84 54 Q 90 50 98 54" stroke="#0F172A" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <!-- Eyes -->
+    <ellipse cx="69" cy="61" rx="3" ry="2.2" fill="#0F172A" />
+    <ellipse cx="91" cy="61" rx="3" ry="2.2" fill="#0F172A" />
+    <!-- Moustache -->
+    <path d="M 70 76 C 75 74 79 75 80 77 C 81 75 85 74 90 76 C 88 80 84 80 80 78 C 76 80 72 80 70 76 Z" fill="#1E293B" />
+    <!-- Nose -->
+    <path d="M 80 60 L 77 71 L 83 71" stroke="#BA774B" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Smile -->
+    <path d="M 74 83 Q 80 87 86 83" stroke="#92400E" stroke-width="2.2" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

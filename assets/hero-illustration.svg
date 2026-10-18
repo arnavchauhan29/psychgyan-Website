@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 420" width="100%" height="auto" role="img" aria-label="PsychGyan Student Understanding & Educational Psychology Framework Illustration">
+  <!--
+    PsychGyan Hero Conceptual Illustration
+    Subject: Understanding the Student Mind Beyond Academic Marks
+    Palette: Navy, Primary Blue, Bright Blue, Green, Orange, Yellow, Cream
+  -->
+  <defs>
+    <linearGradient id="heroCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FBF4E6" />
+    </linearGradient>
+    <linearGradient id="heroStudentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#DBEAFE" />
+    </linearGradient>
+    <filter id="subtleCardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas Frame -->
+  <rect x="10" y="10" width="520" height="400" rx="16" fill="url(#heroCardBg)" stroke="#E6DCCE" stroke-width="1.5" filter="url(#subtleCardShadow)" />
+
+  <!-- Top Decorative Header Strip -->
+  <path d="M 10 26 C 10 17 17 10 26 10 L 514 10 C 523 10 530 17 530 26 L 530 44 L 10 44 Z" fill="#0F172A" />
+  <circle cx="34" cy="27" r="4.5" fill="#EF4444" opacity="0.85" />
+  <circle cx="48" cy="27" r="4.5" fill="#FACC15" opacity="0.85" />
+  <circle cx="62" cy="27" r="4.5" fill="#10B981" opacity="0.85" />
+  <text x="84" y="31" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="0.05em">
+    PSYCHGYAN STUDENT DEVELOPMENT FRAMEWORK • CLASSES 9–12
+  </text>
+
+  <!-- Central Cognitive Aura / Network Canvas -->
+  <circle cx="270" cy="225" r="130" fill="url(#heroStudentGlow)" opacity="0.6" />
+  <circle cx="270" cy="225" r="95" stroke="#BFDBFE" stroke-width="1.5" stroke-dasharray="4 4" fill="none" />
+  
+  <!-- Stylized Student Profile Facing Future Growth -->
+  <g transform="translate(230, 160)">
+    <!-- Base Head & Shoulder Contour -->
+    <path d="M 40 100 C 40 85 28 80 18 78 C 8 76 -5 85 -5 100 Z" fill="#0F172A" />
+    <!-- Neck -->
+    <path d="M 10 78 L 10 65 L 26 65 L 26 78 Z" fill="#1E40AF" />
+    <!-- Head / Cranium -->
+    <circle cx="18" cy="45" r="24" fill="#0F172A" />
+    <!-- Facial Profile Facing Right -->
+    <path d="M 18 21 C 32 21 38 29 38 40 C 38 43 42 45 42 48 C 38 49 37 53 37 57 C 32 65 24 67 18 67 Z" fill="#1E40AF" />
+    <!-- Sprouting Growth Leaf on Mind -->
+    <path d="M 18 21 C 24 10 36 12 40 22 C 34 26 26 28 18 21 Z" fill="#10B981" />
+    <circle cx="26" cy="38" r="3" fill="#F97316" />
+  </g>
+
+  <!-- Dynamic Connecting Network Beams to Pillars -->
+  <!-- Beam to Pillar 1 (Top Left) -->
+  <path d="M 235 180 C 180 140 160 110 120 105" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75" />
+  <!-- Beam to Pillar 2 (Bottom Left) -->
+  <path d="M 230 240 C 170 270 150 290 120 315" stroke="#10B981" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75" />
+  <!-- Beam to Pillar 3 (Top Right) -->
+  <path d="M 285 180 C 340 140 370 120 410 105" stroke="#F97316" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75" />
+  <!-- Beam to Pillar 4 (Bottom Right) -->
+  <path d="M 285 240 C 340 280 370 295 410 315" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75" />
+  <!-- Beam to Pillar 5 (Top Center) -->
+  <path d="M 255 160 L 255 105" stroke="#FACC15" stroke-width="2" stroke-dasharray="3 3" fill="none" />
+
+  <!-- Floating Pillar Cards (Educational Insight Badges) -->
+  <!-- Card 1: Academic Stress & Exam Resilience -->
+  <g transform="translate(25, 75)">
+    <rect width="170" height="52" rx="8" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="1.5" />
+    <rect x="0" y="0" width="5" height="52" rx="2" fill="#1E40AF" />
+    <circle cx="22" cy="26" r="10" fill="#EFF6FF" />
+    <text x="22" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#1E40AF" text-anchor="middle">P1</text>
+    <text x="40" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Stress & Resilience</text>
+    <text x="40" y="38" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9.5" fill="#64748B">Recovery after tests</text>
+  </g>
+
+  <!-- Card 2: Learning Approaches -->
+  <g transform="translate(25, 290)">
+    <rect width="170" height="52" rx="8" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5" />
+    <rect x="0" y="0" width="5" height="52" rx="2" fill="#10B981" />
+    <circle cx="22" cy="26" r="10" fill="#ECFDF5" />
+    <text x="22" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#047857" text-anchor="middle">P2</text>
+    <text x="40" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Learning Approaches</text>
+    <text x="40" y="38" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9.5" fill="#64748B">Active recall & depth</text>
+  </g>
+
+  <!-- Card 3: Execution & Time Friction -->
+  <g transform="translate(345, 75)">
+    <rect width="170" height="52" rx="8" fill="#FFFFFF" stroke="#FED7AA" stroke-width="1.5" />
+    <rect x="0" y="0" width="5" height="52" rx="2" fill="#F97316" />
+    <circle cx="22" cy="26" r="10" fill="#FFF7ED" />
+    <text x="22" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#C2410C" text-anchor="middle">P3</text>
+    <text x="40" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Daily Execution</text>
+    <text x="40" y="38" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9.5" fill="#64748B">Consistency & routine</text>
+  </g>
+
+  <!-- Card 4: Motivation & Stamina -->
+  <g transform="translate(345, 290)">
+    <rect width="170" height="52" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5" />
+    <rect x="0" y="0" width="5" height="52" rx="2" fill="#3B82F6" />
+    <circle cx="22" cy="26" r="10" fill="#EFF6FF" />
+    <text x="22" y="30" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="800" fill="#1D4ED8" text-anchor="middle">P4</text>
+    <text x="40" y="22" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Motivational Stamina</text>
+    <text x="40" y="38" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9.5" fill="#64748B">Drive across test cycles</text>
+  </g>
+
+  <!-- Card 5: Classroom Climate (Top Center) -->
+  <g transform="translate(185, 60)">
+    <rect width="165" height="38" rx="6" fill="#0F172A" />
+    <text x="82" y="24" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#FFFAF0" text-anchor="middle">
+      P5: Classroom Climate
+    </text>
+  </g>
+
+  <!-- Floating Credibility Stamp (Bottom Center) -->
+  <g transform="translate(160, 360)">
+    <rect width="220" height="34" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="20" cy="17" r="5" fill="#10B981" />
+    <text x="34" y="21" font-family="'Source Sans 3', system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#334155">
+      Educational Diagnostic • 40 Questions
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" width="280" height="68" role="img" aria-label="PsychGyan - Better Mind, Brighter Future (White / Dark Background Variant)">
+  <!--
+    PsychGyan Official Brand Mark (Dark Background Variant)
+    Concept: Integrated Human Profile & Mind-Growth Leaf
+    Design Status: Proposed Design Awaiting Founder Approval
+  -->
+  <defs>
+    <linearGradient id="leafGradDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Brand Emblem Graphic -->
+  <g transform="translate(6, 6)">
+    <!-- Base Background Shield with subtle light border for dark surfaces -->
+    <rect x="0" y="0" width="56" height="56" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    
+    <!-- Outer Mind Profile Arc -->
+    <path d="M 24 10 C 37 10 46 19 46 32 C 46 41 40 47 34 50 L 34 44 C 38 41 41 37 41 32 C 41 22 34 15 24 15 C 16 15 11 20 11 28 C 11 35 15 40 21 43 L 19 48 C 12 44 6 37 6 28 C 6 18 14 10 24 10 Z" fill="#60A5FA" opacity="0.9" />
+    
+    <!-- Central Flourishing Growth Leaf -->
+    <path d="M 28 14 C 28 14 38 22 36 34 C 34 44 26 48 24 48 C 22 48 16 43 18 33 C 20 23 28 14 28 14 Z" fill="url(#leafGradDark)" />
+    
+    <!-- Inner Leaf Spine -->
+    <path d="M 27 18 C 27 24 25 38 23 46" stroke="#0F172A" stroke-width="1.75" stroke-linecap="round" fill="none" opacity="0.8" />
+    
+    <!-- Mind Spark / Insight Accent Dot -->
+    <circle cx="30" cy="22" r="3" fill="#FB923C" />
+    <!-- Potentiality Anchor Dot -->
+    <circle cx="21" cy="30" r="2" fill="#FACC15" />
+  </g>
+
+  <!-- Typography Wordmark for Dark Backgrounds -->
+  <text x="74" y="36" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.03em" fill="#FFFAF0">
+    Psych<tspan fill="#60A5FA">Gyan</tspan>
+  </text>
+  
+  <!-- Subtitle Tagline -->
+  <text x="75" y="52" font-family="'Source Sans 3', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.08em" fill="#94A3B8">
+    BETTER MIND • BRIGHTER FUTURE
+  </text>
+</svg>

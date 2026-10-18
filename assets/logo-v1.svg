@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 68" width="280" height="68" role="img" aria-label="PsychGyan - Better Mind, Brighter Future">
+  <!--
+    PsychGyan Official Brand Mark
+    Concept: Integrated Human Profile & Mind-Growth Leaf
+    Design Status: Proposed Design Awaiting Founder Approval
+  -->
+  <defs>
+    <!-- Subtle crisp clip and gradients within approved brand palette -->
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="mindGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Brand Emblem Graphic (Profile + Leaf Concept) -->
+  <g transform="translate(6, 6)">
+    <!-- Base Background Shield / Rounded Anchor -->
+    <rect x="0" y="0" width="56" height="56" rx="10" fill="#0F172A" />
+    
+    <!-- Outer Mind Profile Arc (Representing Cognitive Clarity & Structure) -->
+    <path d="M 24 10 C 37 10 46 19 46 32 C 46 41 40 47 34 50 L 34 44 C 38 41 41 37 41 32 C 41 22 34 15 24 15 C 16 15 11 20 11 28 C 11 35 15 40 21 43 L 19 48 C 12 44 6 37 6 28 C 6 18 14 10 24 10 Z" fill="#3B82F6" opacity="0.85" />
+    
+    <!-- Central Flourishing Growth Leaf (Representing Nurturing & Educational Development) -->
+    <path d="M 28 14 C 28 14 38 22 36 34 C 34 44 26 48 24 48 C 22 48 16 43 18 33 C 20 23 28 14 28 14 Z" fill="url(#leafGrad)" />
+    
+    <!-- Inner Leaf Spine & Focus Core -->
+    <path d="M 27 18 C 27 24 25 38 23 46" stroke="#FFFAF0" stroke-width="1.75" stroke-linecap="round" fill="none" opacity="0.9" />
+    
+    <!-- Mind Spark / Insight Accent Dot (Orange Energy) -->
+    <circle cx="30" cy="22" r="3" fill="#F97316" />
+    <!-- Potentiality Anchor Dot (Yellow Curiosity) -->
+    <circle cx="21" cy="30" r="2" fill="#FACC15" />
+  </g>
+
+  <!-- Typography Wordmark -->
+  <!-- "Psych" in Navy, "Gyan" in Primary Blue -->
+  <text x="74" y="36" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" letter-spacing="-0.03em" fill="#0F172A">
+    Psych<tspan fill="#1E40AF">Gyan</tspan>
+  </text>
+  
+  <!-- Subtitle Tagline -->
+  <text x="75" y="52" font-family="'Source Sans 3', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.08em" fill="#64748B">
+    BETTER MIND • BRIGHTER FUTURE
+  </text>
+</svg>

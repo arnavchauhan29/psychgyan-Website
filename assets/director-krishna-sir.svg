@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Illustrative portrait of Krishna Sir, Director, Skyline Institute">
+  <!-- Illustrative Representation (Not an actual photograph) -->
+  <defs>
+    <linearGradient id="bgGradKrishna" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5" />
+      <stop offset="100%" stop-color="#A7F3D0" />
+    </linearGradient>
+    <clipPath id="circleClipKrishna">
+      <circle cx="80" cy="80" r="75" />
+    </clipPath>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="80" cy="80" r="78" fill="#10B981" />
+  <circle cx="80" cy="80" r="75" fill="url(#bgGradKrishna)" />
+
+  <g clip-path="url(#circleClipKrishna)">
+    <!-- Suit / Shoulders -->
+    <path d="M 20 160 C 20 120 45 105 80 105 C 115 105 140 120 140 160 Z" fill="#0F172A" />
+    <!-- Shirt Collar -->
+    <polygon points="80,118 64,102 74,96 80,108 86,96 96,102" fill="#FFFFFF" />
+    <!-- Tie -->
+    <polygon points="77,108 83,108 86,145 80,152 74,145" fill="#10B981" />
+    <!-- Neck -->
+    <rect x="71" y="80" width="18" height="24" fill="#DB996A" rx="3" />
+    <!-- Head / Face -->
+    <ellipse cx="80" cy="65" rx="26" ry="32" fill="#E4A072" />
+    <!-- Hair -->
+    <path d="M 52 52 C 52 28 66 22 80 22 C 94 22 108 28 108 52 C 108 58 104 38 96 34 C 88 30 72 30 64 34 C 56 38 52 58 52 52 Z" fill="#172554" />
+    <!-- Ears -->
+    <ellipse cx="53" cy="66" rx="4" ry="7" fill="#C98455" />
+    <ellipse cx="107" cy="66" rx="4" ry="7" fill="#C98455" />
+    <!-- Eyebrows -->
+    <path d="M 63 54 Q 71 50 77 54" stroke="#172554" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 83 54 Q 89 50 97 54" stroke="#172554" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <!-- Eyes -->
+    <ellipse cx="70" cy="61" rx="3" ry="2" fill="#0F172A" />
+    <ellipse cx="90" cy="61" rx="3" ry="2" fill="#0F172A" />
+    <!-- Nose -->
+    <path d="M 80 60 L 78 71 L 83 71" stroke="#BA774B" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Smile -->
+    <path d="M 72 80 Q 80 86 88 80" stroke="#92400E" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsychGyan | Better Mind â€¢ Brighter Future</title>
+  <meta name="description" content="PsychGyan supports coaching institutes and schools through structured educational assessments and student-development initiatives for Classes 9 to 12.">
+
+  <!-- Typography: Plus Jakarta Sans (Headings) and Source Sans 3 (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Site Stylesheet (with cache-bust parameter) -->
+  <link rel="stylesheet" href="styles.css?v=20261016_3">
+
+  <!-- Direct Cache-Bust & Fail-Safe Inlined Styles for Testimonials -->
+  <style>
+    .reveal-on-scroll {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .testimonials-section {
+      background-color: #FFFAF0;
+      border-top: 1px solid #E2E8F0;
+      padding: 5rem 0;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 900px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .testimonial-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 1.75rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+    }
+    .testimonial-card-blue {
+      border-top: 5px solid #1E40AF;
+      background: linear-gradient(180deg, #F0F7FF 0%, #FFFFFF 40%);
+      border-color: #BFDBFE;
+    }
+    .testimonial-card-orange {
+      border-top: 5px solid #F97316;
+      background: linear-gradient(180deg, #FFF7ED 0%, #FFFFFF 40%);
+      border-color: #FED7AA;
+    }
+    .testimonial-card-green {
+      border-top: 5px solid #10B981;
+      background: linear-gradient(180deg, #ECFDF5 0%, #FFFFFF 40%);
+      border-color: #A7F3D0;
+    }
+    .testimonial-card-navy {
+      border-top: 5px solid #0F172A;
+      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 40%);
+      border-color: #CBD5E1;
+    }
+    .testimonial-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed #E2E8F0;
+    }
+    .institute-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      background-color: #EFF6FF;
+      color: #1E40AF;
+      border: 1px solid #BFDBFE;
+    }
+    .institute-badge-orange {
+      background-color: #FFF7ED;
+      color: #C2410C;
+      border-color: #FED7AA;
+    }
+    .institute-badge-green {
+      background-color: #ECFDF5;
+      color: #047857;
+      border-color: #A7F3D0;
+    }
+    .institute-badge-navy {
+      background-color: #F1F5F9;
+      color: #0F172A;
+      border-color: #CBD5E1;
+    }
+    .quote-glyph {
+      width: 32px;
+      height: 32px;
+      color: #1E40AF;
+      opacity: 0.25;
+      flex-shrink: 0;
+    }
+    .testimonial-card-orange .quote-glyph { color: #F97316; }
+    .testimonial-card-green .quote-glyph { color: #10B981; }
+    .testimonial-card-navy .quote-glyph { color: #0F172A; }
+    .testimonial-quote-text {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #1E293B;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-author-box {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid #E2E8F0;
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+    .director-avatar-img {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.14);
+      border: 3px solid #FFFFFF;
+      background-color: #FFFFFF;
+    }
+    .director-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .author-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+    }
+    .author-role {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #1E40AF;
+      margin-top: 2px;
+    }
+    .author-institute {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748B;
+      margin-top: 1px;
+    }
+    .portrait-disclaimer-pill {
+      font-size: 10px;
+      font-weight: 600;
+      color: #64748B;
+      background-color: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      padding: 1px 6px;
+      border-radius: 3px;
+      width: fit-content;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .testimonials-footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #64748B;
+    }
+  </style>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       1. Header & Navigation
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-wrapper" aria-label="PsychGyan: Home">
+        <img src="assets/logo.png" alt="PsychGyan: Better Mind • Brighter Future" class="brand-logo-img" width="950" height="340">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#pathways" class="nav-link">For Coaching &amp; Schools</a></li>
+          <li><a href="#framework" class="nav-link">3-Stage Framework</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Partner with PsychGyan</a>
+      </nav>
+
+      <!-- Accessible Mobile Menu Toggle Button -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-toggle-btn" aria-expanded="false" aria-controls="mobile-nav-menu" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-nav-drawer" id="mobile-nav-menu" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#pathways" class="mobile-link">For Coaching & Schools</a></li>
+        <li><a href="#framework" class="mobile-link">3-Stage Framework & Beta</a></li>
+        <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+        <li><a href="#faq" class="mobile-link">Frequently Asked Questions</a></li>
+        <li><a href="#students-parents" class="mobile-link">Students & Parents</a></li>
+        <li><a href="#contact" class="mobile-link">Contact & Inquiries</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">Partner with PsychGyan</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- ========================================================================
+         2. Hero Section (Vibrant, Bold & Coursera-Inspired Balance)
+         ======================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-tagline-badge">
+              Better Mind â€¢ Brighter Future
+            </div>
+            
+            <h1 class="hero-title">
+              Understand Students Beyond Academic Marks. <span class="highlight-underline">Empower Real Potential.</span>
+            </h1>
+
+            <p class="text-lead">
+              Marks capture output, but rarely reveal the study friction, exam pressure, or motivation plateaus holding students back. PsychGyan collaborates with coaching institutes and schools to deliver structured educational assessments and student-development initiatives for Classes 9 to 12.
+            </p>
+
+            <!-- Dual Audience Pathways Ribbon (Equal Prominence Near Top) -->
+            <div class="pathway-banner-wrap" id="pathways-banner">
+              <span class="pathway-label">Explore Solutions for Your Institution:</span>
+              <div class="hero-pathways">
+                <a href="#pathways" class="pathway-card-btn pathway-coaching-box" data-tab-target="tab-coaching">
+                  <span class="pathway-title">For Coaching Institutes</span>
+                  <span class="pathway-sub">Classes 9 to 12 â€¢ Retention & Exam Pressure</span>
+                </a>
+                <a href="#pathways" class="pathway-card-btn pathway-school-box" data-tab-target="tab-schools">
+                  <span class="pathway-title">For Schools & Educators</span>
+                  <span class="pathway-sub">Principals & Coordinators â€¢ Classroom Climate</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Calls to Action -->
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Partner with PsychGyan</a>
+              <a href="#framework" class="btn btn-secondary">Explore 3-Stage Framework</a>
+            </div>
+
+            <p class="text-xs text-muted" style="margin-top: var(--space-2);">
+              Educational psychology & student support initiative. Diagnostic assessments are educational tools in structured development, not clinical diagnostic tests.
+            </p>
+          </div>
+
+          <!-- Hero Visual: Red vs Green Infographic (From Problems to Possibilities) -->
+          <div class="hero-visual-frame">
+            <img src="assets/from-problems-to-possibilities.png" alt="From Problems to Possibilities: Common Student Challenges vs PsychGyan's Structured Approach" class="hero-infographic-preview" width="560" height="420" loading="eager" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 12px 36px rgba(15, 23, 42, 0.16); border: 2px solid #E2E8F0; display: block;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Institutional Credibility / Focus Ribbon (Alternative to Logo Strip)
+         ======================================================================== -->
+    <section class="credibility-ribbon-section" aria-label="Institutional Focus and Academic Cohorts">
+      <div class="container">
+        <div class="ribbon-intro-text">
+          Institutional Focus Across Critical Academic Transitions â€¢ Classes 9 to 12
+        </div>
+
+        <div class="credibility-grid">
+          <div class="credibility-item">
+            <div class="credibility-icon-box icon-blue">C9</div>
+            <div>
+              <div class="credibility-text-strong">Classes 9 & 10 Foundation</div>
+              <div class="credibility-text-sub">Study habits & cognitive stamina</div>
+            </div>
+          </div>
+
+          <div class="credibility-item">
+            <div class="credibility-icon-box icon-orange">JEE</div>
+            <div>
+              <div class="credibility-text-strong">Classes 11 & 12 Entrance</div>
+              <div class="credibility-text-sub">JEE, NEET & test fatigue recovery</div>
+            </div>
+          </div>
+
+          <div class="credibility-item">
+            <div class="credibility-icon-box icon-green">BRD</div>
+            <div>
+              <div class="credibility-text-strong">Board Exam Batches</div>
+              <div class="credibility-text-sub">CBSE, ICSE & State Boards</div>
+            </div>
+          </div>
+
+          <div class="credibility-item">
+            <div class="credibility-icon-box icon-yellow">INS</div>
+            <div>
+              <div class="credibility-text-strong">Institutional Leadership</div>
+              <div class="credibility-text-sub">Coaching owners & school principals</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ribbon-disclaimer-note">
+          Institutional Partner Ribbon: Dedicated space reserved for verified school and coaching-institute partner emblems following pilot milestones.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. About PsychGyan (Institutional Mission)
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="about">
+      <div class="container container-narrow text-center reveal-on-scroll">
+        <span class="badge badge-primary">About Our Initiative</span>
+        <h2 style="margin-top: var(--space-4); margin-bottom: var(--space-4);">
+          Rethinking How Educational Institutions Support Students
+        </h2>
+        <p class="text-lead" style="text-align: left;">
+          PsychGyan is an education-support and student-development company. We collaborate with coaching directors, school leaders, and teachers who recognise that academic achievement in high-stakes environments requires more than rigorous lecture delivery.
+        </p>
+        <p class="text-muted" style="text-align: left;">
+          When bright students struggle in Classes 9 to 12, the underlying obstacle is rarely a lack of intelligence. More often, it stems from unaddressed exam pressure, inefficient study execution, waning motivational stamina, or classroom anxiety. PsychGyan creates structured diagnostic assessments and targeted developmental programmes to help educators support students with clarity and empathy.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Audience Pathways Section (Interactive Tabs: Coaching vs Schools)
+         ======================================================================== -->
+    <section class="section section-cream" id="pathways">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Tailored Institutional Support</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            For Coaching Institutes and Schools
+          </h2>
+          <p class="text-lead text-muted">
+            Both sectors face distinct operational demands. Select your institution type below to review tailored challenges and solutions.
+          </p>
+        </div>
+
+        <div class="interactive-tabs-container">
+          <!-- Tab Navigation Bar -->
+          <div class="tab-nav-bar" role="tablist" aria-label="Institutional Audiences">
+            <button type="button" class="tab-trigger-btn is-active" id="tab-btn-coaching" role="tab" aria-selected="true" aria-controls="pane-coaching">
+              For Coaching Institutes (Classes 9 to 12)
+            </button>
+            <button type="button" class="tab-trigger-btn" id="tab-btn-schools" role="tab" aria-selected="false" aria-controls="pane-schools">
+              For Schools & Academic Coordinators
+            </button>
+          </div>
+
+          <!-- Tab Pane 1: Coaching Institutes -->
+          <div class="tab-pane is-active" id="pane-coaching" role="tabpanel" aria-labelledby="tab-btn-coaching">
+            <div class="editorial-split">
+              <div class="editorial-lead-col">
+                <span class="badge badge-coaching">Primary Customer Focus: Coaching Institutes</span>
+                <h3>Solving Score Plateaus and Student Dropouts</h3>
+                <p class="text-lead">
+                  Managing a competitive coaching centre for JEE, NEET, and Foundation batches brings severe institutional pressures: sudden score plateaus, student burnout, and silent dropouts.
+                </p>
+                <p>
+                  Faculty work tirelessly to deliver rigorous lectures, yet students frequently struggle with home study execution. When test scores dip, traditional responses like increasing test frequency or parental warnings can heighten anxiety without addressing the root cause.
+                </p>
+                <p>
+                  PsychGyan helps coaching owners explore these challenges objectively. By examining student-reported patterns in study execution, stress resilience, and batch dynamics, institutes can intervene constructively before students lose confidence or withdraw.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="#contact" class="btn btn-primary">Partner with PsychGyan</a>
+                </div>
+              </div>
+
+              <div class="editorial-detail-card detail-card-coaching">
+                <span class="text-sm font-bold text-navy" style="text-transform: uppercase; letter-spacing: 0.05em;">
+                  Coaching Hurdles We Help You Address
+                </span>
+                <ul class="challenge-list">
+                  <li class="challenge-item">
+                    <strong>Sudden Score Plateaus</strong>
+                    <p>Helping directors understand why capable students stall mid-session despite full lecture attendance.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>Silent Dropouts & Batch Attrition</strong>
+                    <p>Spotting early warning signs of disengagement and fatigue before students abandon preparation.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>The Home-Study Execution Gap</strong>
+                    <p>Uncovering friction in daily time management, procrastination, and retention strategies.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>Constructive Parent Communication</strong>
+                    <p>Replacing high-friction blame with structured insights on how the student can be guided effectively.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Pane 2: Schools & Educators -->
+          <div class="tab-pane" id="pane-schools" role="tabpanel" aria-labelledby="tab-btn-schools">
+            <div class="editorial-split">
+              <div class="editorial-lead-col">
+                <span class="badge badge-school">Institutional Focus: Schools</span>
+                <h3>Equipping School Leaders & Academic Coordinators</h3>
+                <p class="text-lead">
+                  Secondary and senior secondary schools carry the vital responsibility of nurturing well-rounded students while navigating board exam expectations.
+                </p>
+                <p>
+                  Principals, academic coordinators, and teachers need practical methodologies to support emotional resilience and cognitive focus. PsychGyan offers school-tailored developmental workshops and diagnostic assessments that help educators understand what students experience behind their classroom demeanor.
+                </p>
+                <p>
+                  Through structured insights into classroom climate and study habits, school management can create an environment where academic ambition is supported by healthy mental habits.
+                </p>
+                <div style="margin-top: var(--space-4);">
+                  <a href="#contact" class="btn btn-secondary">Explore School Partnerships</a>
+                </div>
+              </div>
+
+              <div class="editorial-detail-card detail-card-school">
+                <span class="text-sm font-bold text-navy" style="text-transform: uppercase; letter-spacing: 0.05em;">
+                  How PsychGyan Supports School Environments
+                </span>
+                <ul class="challenge-list">
+                  <li class="challenge-item">
+                    <strong>Classroom Climate & Psychological Safety</strong>
+                    <p>Assessing whether students feel confident asking clarifying questions without fear of peer judgment.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>Board Exam Readiness & Stress Buffering</strong>
+                    <p>Equipping students with healthy coping mechanisms to manage board and competitive exam stress.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>Faculty-Student Alignment</strong>
+                    <p>Providing coordinators and teachers with actionable insights into batch-level learning approaches.</p>
+                  </li>
+                  <li class="challenge-item">
+                    <strong>Proactive Guidance Over Punitive Measures</strong>
+                    <p>Assisting school counselors and teachers with structured conversational frameworks for student support.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. The Four Programme Elements & Framework Architecture
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="framework">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Our Educational Framework</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            The 3-Stage Service Continuum & Beta Pilot
+          </h2>
+          <p class="text-lead text-muted">
+            A structured framework designed to understand student challenges, equip them with actionable methods, and sustain long-term developmental habits.
+          </p>
+        </div>
+
+        <!-- Architectural Clarification Banner -->
+        <div class="callout-banner">
+          <p class="text-sm" style="margin-bottom: 0;">
+            <strong>Important Architectural Distinction:</strong> The core PsychGyan service model follows a continuous 3-stage continuum (Understand, Equip, Sustain). In addition, we offer a dedicated <strong>14-Day Beta Programme</strong> as a shorter pilot on-ramp to evaluate fit before full institutional deployment.
+          </p>
+        </div>
+
+        <!-- 3-Stage Lifecycle Grid -->
+        <div class="lifecycle-track">
+          <!-- Stage 1 -->
+          <div class="stage-step-card stage-pmt reveal-on-scroll">
+            <span class="stage-number">Stage 01</span>
+            <h4>PMT Understand</h4>
+            <span class="badge badge-in-development" style="margin-bottom: var(--space-3); width: fit-content;">
+              In Active Development
+            </span>
+            <p>
+              A proposed 40-question educational assessment exploring student-reported friction across five key pillars: academic stress, learning approaches, execution, motivation, and classroom environment.
+            </p>
+            <p class="text-xs text-muted" style="margin-top: auto;">
+              Purpose: Provides institutional heads with batch-level diagnostic clarity on non-academic hurdles.
+            </p>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="stage-step-card stage-seminar reveal-on-scroll">
+            <span class="stage-number">Stage 02</span>
+            <h4>Seminar Equip</h4>
+            <span class="badge badge-primary" style="margin-bottom: var(--space-3); width: fit-content;">
+              Interactive Workshop
+            </span>
+            <p>
+              Intensive, practical educational seminars and workshops designed to equip students with tangible tools for daily study execution, distraction management, cognitive focus routines, and exam recovery.
+            </p>
+            <p class="text-xs text-muted" style="margin-top: auto;">
+              Purpose: Translates diagnostic insights into immediate, actionable student study habits.
+            </p>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="stage-step-card stage-sustain reveal-on-scroll">
+            <span class="stage-number">Stage 03</span>
+            <h4>Mind Shift 90 Sustain</h4>
+            <span class="badge badge-primary" style="margin-bottom: var(--space-3); width: fit-content;">
+              Proposed 90-Day Engagement
+            </span>
+            <p>
+              A proposed quarter-long developmental framework designed to reinforce student self-regulation, sustain constructive study habits, and provide institutions with longitudinal follow-through.
+            </p>
+            <p class="text-xs text-muted" style="margin-top: auto;">
+              Purpose: Embeds developmental progress into regular institutional rhythm over 90 days.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. The 14-Day Beta Programme (Dedicated Pilot Card) -->
+        <div class="pilot-highlight-card reveal-on-scroll">
+          <div class="pilot-meta">
+            <span class="badge badge-in-development">Pilot Programme On-Ramp</span>
+            <h3 style="color: #78350F; font-size: var(--font-size-xl);">14-Day Beta Programme</h3>
+            <span class="text-xs" style="color: #92400E; font-weight: 600;">
+              Introductory Institutional Pilot
+            </span>
+          </div>
+          <div class="pilot-body">
+            <h4>A Compact Trial Connected to Mind Shift 90</h4>
+            <p>
+              The 14-Day Beta Programme is designed as an accessible evaluation pathway for coaching institutes and schools. Rather than committing immediately to a full 90-day engagement, institutes can test core workshop formats and gauge student reception within a focused two-week window.
+            </p>
+            <p class="text-xs" style="color: #78350F;">
+              * Programme Notice: Specific curriculum modules, session dates, institutional eligibility criteria, and pilot availability are currently being finalized with early institutional partners.
+            </p>
+          </div>
+        </div>
+
+        <!-- ====================================================================
+             Interactive 5 PMT Pillars Explorer
+             ==================================================================== -->
+        <div class="pillars-interactive-wrap" id="pillars-explorer">
+          <div class="section-header">
+            <span class="badge badge-in-development">Assessment Architecture</span>
+            <h3 style="margin-top: var(--space-2); margin-bottom: var(--space-2);">
+              Interactive Explorer: The 5 PMT Pillars
+            </h3>
+            <p class="text-muted text-sm">
+              Click any pillar below to inspect its core diagnostic scope and educational focus areas:
+            </p>
+          </div>
+
+          <div class="pillars-nav-strip" role="tablist" aria-label="Five PMT Pillars">
+            <button type="button" class="pillar-tab-btn is-active" data-pillar-idx="0" role="tab" aria-selected="true">
+              <span class="pillar-tab-idx">Pillar 01</span>
+              <span class="pillar-tab-title">Stress & Exam Resilience</span>
+            </button>
+            <button type="button" class="pillar-tab-btn" data-pillar-idx="1" role="tab" aria-selected="false">
+              <span class="pillar-tab-idx">Pillar 02</span>
+              <span class="pillar-tab-title">Learning Approaches</span>
+            </button>
+            <button type="button" class="pillar-tab-btn" data-pillar-idx="2" role="tab" aria-selected="false">
+              <span class="pillar-tab-idx">Pillar 03</span>
+              <span class="pillar-tab-title">Daily Execution</span>
+            </button>
+            <button type="button" class="pillar-tab-btn" data-pillar-idx="3" role="tab" aria-selected="false">
+              <span class="pillar-tab-idx">Pillar 04</span>
+              <span class="pillar-tab-title">Motivation & Stamina</span>
+            </button>
+            <button type="button" class="pillar-tab-btn" data-pillar-idx="4" role="tab" aria-selected="false">
+              <span class="pillar-tab-idx">Pillar 05</span>
+              <span class="pillar-tab-title">Classroom Climate</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Display Box for Selected Pillar -->
+          <div class="pillar-detail-display" id="pillar-detail-panel" aria-live="polite">
+            <h4 class="pillar-detail-title" id="p-display-title">Pillar 01: Academic Stress & Exam Resilience</h4>
+            <p class="pillar-detail-body" id="p-display-body">
+              Explores test anxiety patterns, psychological recovery following unsatisfactory test results, and cognitive stamina during extended exam preparation. Helps directors identify when student performance dips are caused by stress rather than lack of subject knowledge.
+            </p>
+            <div style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+              <span class="badge badge-primary">Assessment Scope: 8 Diagnostic Indicators</span>
+              <span class="badge badge-in-development">Development Status: Pilot Staging</span>
+            </div>
+          </div>
+
+          <!-- Explicit Clinical Disclaimer -->
+          <div class="callout-banner banner-warning" style="margin-top: var(--space-8);">
+            <p class="text-sm" style="color: #78350F; margin-bottom: 0;">
+              <strong>Scientific & Clinical Disclosure:</strong> The PMT assessment is an educational diagnostic framework currently in active development. It is designed solely for educational guidance and institutional insight. It is not a clinical psychological test, psychiatric evaluation, or medical diagnostic tool.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. Institutional Partnership Process Diagram
+         ======================================================================== -->
+    <section class="section section-cream" id="process">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Collaboration Methodology</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            How Institutions Collaborate with PsychGyan
+          </h2>
+          <p class="text-lead text-muted">
+            A clear, respectful 4-step partnership journey built to integrate seamlessly into your academic calendar.
+          </p>
+        </div>
+
+        <div class="process-stepper-grid">
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number-badge">01</div>
+            <h5>Institutional Dialogue</h5>
+            <p>Exploratory consultation with coaching directors or principals to map batch schedules, target cohorts, and current student challenges.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number-badge">02</div>
+            <h5>Diagnostic Assessment Pilot</h5>
+            <p>Administration of the 40-question PMT pilot across designated Classes 9 to 12 batches, requiring minimal disruption to lecture hours.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number-badge">03</div>
+            <h5>Leadership Synthesis & Debrief</h5>
+            <p>Director debrief presenting aggregated, batch-level patterns in student stress, execution hurdles, and motivational stamina.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number-badge">04</div>
+            <h5>Seminar Equip & Habit Sustain</h5>
+            <p>Conducting action-oriented student workshops and structuring follow-through routines via the 14-Day Beta or Mind Shift 90.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. Why PsychGyan (Intended Institutional Value)
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="why-psychgyan">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Institutional Value</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            Why Educational Institutions Partner with PsychGyan
+          </h2>
+          <p class="text-lead text-muted">
+            The intended institutional benefits of integrating student-development insights into your academic ecosystem.
+          </p>
+        </div>
+
+        <div class="editorial-split">
+          <div class="editorial-detail-card">
+            <div style="font-family: var(--font-family-heading); font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-primary-blue); margin-bottom: var(--space-2);">
+              01 &bull; 02
+            </div>
+            <h4 style="margin-bottom: var(--space-2);">Structured Visibility & Actionable Tools</h4>
+            <p class="text-sm">
+              Moving beyond subjective guesswork. Institutes gain structured, batch-level visibility into the exact learning friction points reported by students, alongside practical workshops that equip students with daily execution routines.
+            </p>
+          </div>
+
+          <div class="editorial-detail-card">
+            <div style="font-family: var(--font-family-heading); font-size: var(--font-size-2xl); font-weight: 800; color: var(--color-orange); margin-bottom: var(--space-2);">
+              03 &bull; 04
+            </div>
+            <h4 style="margin-bottom: var(--space-2);">Constructive Dialogue & Mentoring Blueprint</h4>
+            <p class="text-sm">
+              Facilitating grounded, objective dialogue between institute leadership, teachers, students, and parents centered around constructive problem-solving and timely pastoral interventions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Honest Disclaimer on Outcomes -->
+        <div class="callout-banner" style="margin-top: var(--space-8);">
+          <p class="text-sm" style="margin-bottom: 0;">
+            <strong>Statement on Outcomes:</strong> These points represent our intended institutional benefits and structured objectives. PsychGyan does not publish fabricated statistics, guarantee specific marks, or promise guaranteed exam ranks. Real learning growth depends on collaborative institutional implementation and consistent student effort.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         Flagship Feature: Active Counselling by PsychGyan
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="active-counselling">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Flagship Approach</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            Active Counselling by PsychGyan: From Confusion to Clarity
+          </h2>
+          <p class="text-lead text-muted">
+            Going beyond classroom teaching through student-centred assessment, personalised guidance, and ongoing support.
+          </p>
+        </div>
+
+        <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+          <img src="assets/from-confusion-to-clarity-active-counselling.png" alt="Active Counselling by PsychGyan: From Confusion to Clarity Infographic" width="960" height="540" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12); border: 2px solid #E2E8F0; display: block;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. Testimonials: Trusted Voices in Education
+         ======================================================================== -->
+    <section class="section section-cream testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge badge-primary">Institutional Trust & Endorsements</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            Trusted Conversations: Testimonials from Educational Leaders
+          </h2>
+          <p class="text-lead text-muted">
+            Perspectives on bringing educational psychology and student-development initiatives into learning environments.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Card 1: New Dastak Classes -->
+          <div class="testimonial-card testimonial-card-blue">
+            <div class="testimonial-card-header">
+              <span class="institute-badge">New Dastak Classes</span>
+              <svg class="quote-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              "Understanding the emotional demands and self-study execution of students in Classes 11 and 12 is essential. PsychGyan brings a much-needed structured focus to student resilience alongside regular academic coaching."
+            </p>
+            <div class="testimonial-author-box">
+              <img src="assets/director-pravendra-shakya.svg" alt="Illustrative representation of Pravendra Shakya, Director, New Dastak Classes" class="director-avatar-img" width="68" height="68" loading="lazy">
+              <div class="director-meta">
+                <div class="author-name">Pravendra Shakya</div>
+                <div class="author-role">Director</div>
+                <div class="author-institute">New Dastak Classes</div>
+                <span class="portrait-disclaimer-pill">Illustrative Portrait</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: RPS Academy -->
+          <div class="testimonial-card testimonial-card-orange">
+            <div class="testimonial-card-header">
+              <span class="institute-badge institute-badge-orange">RPS Academy</span>
+              <svg class="quote-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              "Subject knowledge alone does not guarantee success if students cannot manage test pressure or study consistency. The PMT assessment framework addresses the real learning friction students experience."
+            </p>
+            <div class="testimonial-author-box">
+              <img src="assets/director-amritesh-sir.svg" alt="Illustrative representation of Amritesh Sir, Director, RPS Academy" class="director-avatar-img" width="68" height="68" loading="lazy">
+              <div class="director-meta">
+                <div class="author-name">Amritesh Sir</div>
+                <div class="author-role">Director</div>
+                <div class="author-institute">RPS Academy</div>
+                <span class="portrait-disclaimer-pill">Illustrative Portrait</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Skyline Institute -->
+          <div class="testimonial-card testimonial-card-green">
+            <div class="testimonial-card-header">
+              <span class="institute-badge institute-badge-green">Skyline Institute</span>
+              <svg class="quote-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              "Competitive exam preparation requires sustained motivation over many months. PsychGyan provides institutes with structured tools to identify student demotivation early and intervene constructively."
+            </p>
+            <div class="testimonial-author-box">
+              <img src="assets/director-krishna-sir.svg" alt="Illustrative representation of Krishna Sir, Director, Skyline Institute" class="director-avatar-img" width="68" height="68" loading="lazy">
+              <div class="director-meta">
+                <div class="author-name">Krishna Sir</div>
+                <div class="author-role">Director</div>
+                <div class="author-institute">Skyline Institute</div>
+                <span class="portrait-disclaimer-pill">Illustrative Portrait</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Royal Defence Academy -->
+          <div class="testimonial-card testimonial-card-navy">
+            <div class="testimonial-card-header">
+              <span class="institute-badge institute-badge-navy">Royal Defence Academy</span>
+              <svg class="quote-glyph" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              "Mental stamina, discipline, and positive batch morale are foundational for students facing competitive selections. PsychGyan's student-development approach complements institutional rigor."
+            </p>
+            <div class="testimonial-author-box">
+              <img src="assets/director-shivnandan-sir.svg" alt="Illustrative representation of Shivnandan Sir, Director, Royal Defence Academy" class="director-avatar-img" width="68" height="68" loading="lazy">
+              <div class="director-meta">
+                <div class="author-name">Shivnandan Sir</div>
+                <div class="author-role">Director</div>
+                <div class="author-institute">Royal Defence Academy</div>
+                <span class="portrait-disclaimer-pill">Illustrative Portrait</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-footer-note">
+          * Note: Director portraits are illustrative representations created for authorized institutional testimonials.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         10. Secondary Audiences (Students & Parents)
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="students-parents">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">For Families</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            For Students and Parents
+          </h2>
+          <p class="text-lead text-muted">
+            Navigating competitive academic years with clarity, respect, and mutual understanding.
+          </p>
+        </div>
+
+        <div class="editorial-split">
+          <!-- For Students -->
+          <div class="editorial-detail-card reveal-on-scroll">
+            <span class="badge badge-primary" style="margin-bottom: var(--space-3);">For Students in Classes 9 to 12</span>
+            <h3>You Are More Than Your Current Test Score</h3>
+            <p>
+              Preparing for board exams and competitive entrance tests can feel isolating. When concentration slips or test results fall short of expectations, it is easy to assume that you are not capable enough.
+            </p>
+            <p>
+              PsychGyan helps you recognise that study hurdles, test fatigue, and procrastination are solvable execution challenges, not character flaws. Through structured methods, you learn how to manage exam stress, structure independent study sessions, and regain confidence in your learning journey.
+            </p>
+          </div>
+
+          <!-- For Parents -->
+          <div class="editorial-detail-card reveal-on-scroll">
+            <span class="badge badge-primary" style="margin-bottom: var(--space-3);">For Parents</span>
+            <h3>Supporting Your Child Beyond Marks</h3>
+            <p>
+              As a parent, watching your child navigate intense academic pressure is difficult. You want to offer support, but conversations about marks can unintentionally trigger tension or withdrawal.
+            </p>
+            <p>
+              PsychGyan encourages a more informed perspective on your child's educational progress. By understanding the cognitive and emotional demands of Classes 9 to 12, parents can replace high-stress pressure with constructive encouragement, building a home environment where academic effort is sustained and respected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         11. Expandable FAQ Section (Accordion)
+         ======================================================================== -->
+    <section class="section section-cream faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Got Questions?</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-lead text-muted">
+            Essential clarity on our methodology, data privacy, and institutional collaboration.
+          </p>
+        </div>
+
+        <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions Accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Is the PMT assessment a medical or clinical psychological test?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                No. PMT is strictly an educational diagnostic framework exploring student-reported learning approaches, study habits, academic stress, and classroom climate. It is not a clinical psychological test, psychiatric evaluation, or medical diagnostic tool.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How much classroom time does an assessment pilot require?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                The assessment is specifically engineered to respect intensive lecture timetables. The 40-question pilot typically requires under 45 minutes of student time and can be administered during non-lecture hours or weekend batches without disrupting core syllabus completion.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>What specific student cohorts does PsychGyan serve?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                PsychGyan focuses primarily on students in Classes 9 to 12 across competitive coaching institutes (JEE, NEET, Foundation) and senior secondary schools (CBSE, ICSE, and State Boards).
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How is student privacy protected, especially for minors?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                Student privacy is a core ethical principle. No individual student assessment records are stored, hosted, or collected on this public website. Institutional reporting is aggregated at the batch level to help educators spot trends while protecting individual student dignity.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How does the 14-Day Beta Programme relate to Mind Shift 90?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                The 14-Day Beta Programme serves as an accessible evaluation on-ramp. Rather than committing to a full 90-day engagement upfront, directors can observe student engagement and trial workshop formats within a focused two-week window before planning long-term adoption.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How can our institute initiate an exploratory partnership dialogue?</span>
+              <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <p>
+                You can initiate a discussion by completing the institutional inquiry form below or contacting us through our registered institutional domain at psychgyan.in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         12. Institutional Partnership Enquiry Section & Form
+         ======================================================================== -->
+    <section class="section section-cream-subtle" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="badge badge-primary">Institutional Inquiries</span>
+          <h2 style="margin-top: var(--space-3); margin-bottom: var(--space-3);">
+            Partner with PsychGyan
+          </h2>
+          <p class="text-lead text-muted">
+            Direct institutional dialogue for coaching directors, school leaders, and academic coordinators.
+          </p>
+        </div>
+
+        <div class="enquiry-wrapper reveal-on-scroll">
+          <!-- Honest Staging Notice (Zero Fake Submissions) -->
+          <div class="enquiry-staging-note">
+            <strong>Institutional Route Notice:</strong> Form dispatch is currently in pre-launch configuration for the official domain <strong>psychgyan.in</strong>. Completing this form formats your partnership brief so you can review it, copy it, or open it in your email application. No false confirmations are generated.
+          </div>
+
+          <form id="institutional-enquiry-form" novalidate>
+            <!-- Web3Forms Access Key: Enter your Web3Forms key inside value below -->
+            <input type="hidden" name="access_key" id="web3forms-access-key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New PsychGyan Institutional Partnership Enquiry">
+            <input type="hidden" name="from_name" value="PsychGyan Website">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Dr. Rajesh Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-role" class="form-label">Institutional Role *</label>
+                <select id="contact-role" name="role" class="form-select" required>
+                  <option value="" disabled selected>Select your role</option>
+                  <option value="Coaching Director or Owner">Coaching Director or Owner</option>
+                  <option value="School Principal or Head">School Principal or Head</option>
+                  <option value="Academic Coordinator">Academic Coordinator</option>
+                  <option value="Senior Faculty Member">Senior Faculty Member</option>
+                  <option value="Other Institutional Representative">Other Institutional Representative</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Official / Work Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. director@yourinstitute.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Contact / WhatsApp Number (Optional)</label>
+                <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="e.g. +91 98765 43210">
+              </div>
+
+              <div class="form-group">
+                <label for="institution-name" class="form-label">Institution Name *</label>
+                <input type="text" id="institution-name" name="institution_name" class="form-input" placeholder="e.g. Apex Institute / Model Academy" required>
+              </div>
+
+              <div class="form-group">
+                <label for="institution-type" class="form-label">Institution Type *</label>
+                <select id="institution-type" name="institution_type" class="form-select" required>
+                  <option value="" disabled selected>Select type</option>
+                  <option value="Coaching Institute (Classes 9 to 12)">Coaching Institute (Classes 9 to 12)</option>
+                  <option value="Senior Secondary School (CBSE / ICSE / State)">Senior Secondary School</option>
+                  <option value="Integrated Junior College">Integrated Junior College</option>
+                  <option value="Other Educational Entity">Other Educational Entity</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="target-grades" class="form-label">Target Student Cohort</label>
+                <select id="target-grades" name="target_cohort" class="form-select">
+                  <option value="Classes 11 and 12 (Entrance / Boards)">Classes 11 and 12 (Entrance / Boards)</option>
+                  <option value="Classes 9 and 10 (Foundation)">Classes 9 and 10 (Foundation)</option>
+                  <option value="Complete High School (Classes 9 to 12)">Complete High School (Classes 9 to 12)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="programme-interest" class="form-label">Primary Interest</label>
+                <select id="programme-interest" name="programme_interest" class="form-select">
+                  <option value="PMT Understand Pilot Assessment">PMT Understand Pilot Assessment</option>
+                  <option value="Seminar Equip Student Workshops">Seminar Equip Student Workshops</option>
+                  <option value="14-Day Beta Programme">14-Day Beta Programme</option>
+                  <option value="Mind Shift 90 Comprehensive Engagement">Mind Shift 90 Comprehensive Engagement</option>
+                  <option value="General Institutional Discussion">General Institutional Discussion</option>
+                </select>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="enquiry-notes" class="form-label">Institutional Context or Questions</label>
+                <textarea id="enquiry-notes" name="notes" class="form-textarea" placeholder="Share any specific student hurdles, batch size, or scheduling considerations for your institute..."></textarea>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); align-items: center; flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary" id="enquiry-submit-btn">Submit Partnership Enquiry</button>
+              <button type="reset" class="btn btn-secondary" id="enquiry-reset-btn">Clear Fields</button>
+            </div>
+          </form>
+
+          <!-- Result & Feedback Display (Web3Forms Live Status) -->
+          <div class="enquiry-result-box" id="enquiry-result" aria-live="polite">
+            <!-- Success Card -->
+            <div id="enquiry-success-view" style="display: none; background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 6px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <h4 style="color: #065F46; margin: 0; font-size: 1.15rem;">Enquiry Sent Successfully</h4>
+              </div>
+              <p class="text-sm" style="color: #065F46; margin: 0; line-height: 1.6;" id="enquiry-success-text">
+                Thank you. Your institutional partnership inquiry has been delivered directly to PsychGyan. Our academic team will review your batch context and reach out via email shortly.
+              </p>
+            </div>
+
+            <!-- Error Card -->
+            <div id="enquiry-error-view" style="display: none; background: #FEF2F2; border: 1px solid #FECACA; border-radius: 6px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <h4 style="color: #991B1B; margin: 0; font-size: 1.15rem;">Submission Notice</h4>
+              </div>
+              <p class="text-sm" style="color: #991B1B; margin-bottom: 0.75rem; line-height: 1.6;" id="enquiry-error-text">
+                Unable to deliver inquiry. Please verify your internet connection or check your Web3Forms configuration.
+              </p>
+              <button type="button" class="btn btn-secondary" id="enquiry-retry-btn" style="font-size: 0.85rem; padding: 0.4rem 0.85rem;">Try Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       13. Footer (Comprehensive Institutional Footer)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" aria-label="PsychGyan: Home">
+            <img src="assets/logo.png" alt="PsychGyan: Better Mind • Brighter Future" class="footer-logo-img" width="950" height="340">
+          </a>
+          <p class="text-sm" style="color: #94A3B8; margin-top: var(--space-2);">
+            Better Mind â€¢ Brighter Future. Supporting coaching institutes and schools through structured educational assessments and student-development initiatives.
+          </p>
+          <p class="text-sm" style="color: #CBD5E1; margin-top: var(--space-1);">
+            Official Domain: <strong>psychgyan.in</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About PsychGyan</a></li>
+            <li><a href="#pathways">For Coaching &amp; Schools</a></li>
+            <li><a href="#framework">3-Stage Framework &amp; Beta</a></li>
+            <li><a href="#process">Institutional Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#students-parents">Students & Parents</a></li>
+            <li><a href="#contact">Institutional Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Governance & Ethics</h4>
+          <ul class="footer-nav-list">
+            <li><button type="button" class="footer-legal-btn" id="open-privacy-btn">Privacy Policy & Minor Safety</button></li>
+            <li><button type="button" class="footer-legal-btn" id="open-terms-btn">Terms of Service & Scope</button></li>
+            <li><a href="#framework">Clinical Disclaimer</a></li>
+          </ul>
+          <p class="text-xs text-muted" style="margin-top: var(--space-4); line-height: 1.5;">
+            PsychGyan is an educational initiative. Student privacy and minors' data security are core design principles. No student records are stored on this public website.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <p class="text-sm" style="color: #64748B;">
+          &copy; 2026 PsychGyan. All rights reserved. Registered domain: psychgyan.in.
+        </p>
+        <ul class="footer-legal-links">
+          <li><button type="button" class="footer-legal-btn" id="open-privacy-btn-sub">Privacy Policy</button></li>
+          <li><button type="button" class="footer-legal-btn" id="open-terms-btn-sub">Terms of Service</button></li>
+          <li><a href="#contact" style="color: #94A3B8; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       14. Accessible Legal Dialog Modals (Privacy & Terms)
+       ======================================================================== -->
+  <!-- Privacy Policy Modal -->
+  <dialog class="legal-modal" id="privacy-modal" aria-labelledby="privacy-modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="privacy-modal-title" style="color: var(--color-navy); font-size: var(--font-size-xl);">Privacy Policy & Child Safety Statement</h3>
+        <button type="button" class="modal-close-btn" id="close-privacy-btn" aria-label="Close Privacy Policy dialog">Close &times;</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Effective Date:</strong> October 2026 | <strong>Website:</strong> psychgyan.in</p>
+        
+        <h4>1. Commitment to Student and Minor Privacy</h4>
+        <p>
+          Because PsychGyan works with educational institutions serving students in Classes 9 to 12 (many of whom are minors), data protection and ethical transparency are paramount. We strictly respect student dignity and privacy rights.
+        </p>
+
+        <h4>2. Zero Assessment Data on Public Website</h4>
+        <p>
+          No individual student assessment responses, diagnostic scores, or personal school records are hosted, processed, or collected through this public website. The public website functions solely as an informational portal for institutional decision-makers.
+        </p>
+
+        <h4>3. Institutional Contact Data</h4>
+        <p>
+          Information provided through institutional inquiry forms (such as institution name, director name, and contact details) is utilized strictly for direct professional communication regarding potential educational partnerships. We do not sell or rent institutional contact lists to third-party commercial marketing entities.
+        </p>
+
+        <h4>4. Staging Configuration</h4>
+        <p>
+          Online data transmission services are currently in staging configuration for the domain psychgyan.in. Inquiries generated via the website are formatted locally for direct review and communication.
+        </p>
+
+        <h4>5. Contact Regarding Privacy</h4>
+        <p>
+          For questions regarding data privacy standards or institutional data security policies, please contact PsychGyan via the official institutional domain at psychgyan.in.
+        </p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Terms of Service Modal -->
+  <dialog class="legal-modal" id="terms-modal" aria-labelledby="terms-modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="terms-modal-title" style="color: var(--color-navy); font-size: var(--font-size-xl);">Terms of Service & Scope of Initiative</h3>
+        <button type="button" class="modal-close-btn" id="close-terms-btn" aria-label="Close Terms of Service dialog">Close &times;</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Effective Date:</strong> October 2026 | <strong>Website:</strong> psychgyan.in</p>
+
+        <h4>1. Educational Support Scope</h4>
+        <p>
+          PsychGyan is an educational-support and student-development initiative. All assessments (including PMT Understand), workshops (Seminar Equip), and developmental frameworks (Mind Shift 90 and the 14-Day Beta Programme) are designed strictly for educational insight and student-skill development.
+        </p>
+
+        <h4>2. Non-Clinical and Non-Medical Disclaimer</h4>
+        <p>
+          PsychGyan does not provide medical, psychiatric, or clinical psychological diagnosis or treatment. Our diagnostic assessments are educational tools exploring student-reported learning friction and study approaches. They are not intended as substitutes for professional clinical medical advice.
+        </p>
+
+        <h4>3. Development Status of Initiatives</h4>
+        <p>
+          The PMT 40-question assessment framework, the Mind Shift 90 programme, and the 14-Day Beta Programme are educational frameworks under active development. Descriptions on this website define proposed frameworks and pilot scopes rather than established clinical products.
+        </p>
+
+        <h4>4. Intellectual Property</h4>
+        <p>
+          All website copy, design tokens, brand marks, and proposed assessment frameworks are the intellectual property of PsychGyan (psychgyan.in).
+        </p>
+
+        <h4>5. Modifications</h4>
+        <p>
+          PsychGyan reserves the right to refine service descriptions and operational timelines as pilot programs and institutional partnerships evolve.
+        </p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Pure Vanilla JavaScript (with cache-bust parameter) -->
+  <script src="script.js?v=20261018_1" defer></script>
+</body>
+</html>
+

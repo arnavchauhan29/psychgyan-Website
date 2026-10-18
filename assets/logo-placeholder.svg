@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="PsychGyan temporary logo placeholder">
+  <!-- Temporary Placeholder Notice: Replace with official PsychGyan logo asset when finalized -->
+  <rect width="240" height="60" fill="transparent"/>
+  
+  <!-- Stylized leaf & mind-growth icon placeholder -->
+  <g transform="translate(10, 8)">
+    <!-- Base circle badge -->
+    <rect x="0" y="0" width="44" height="44" rx="8" fill="#1E40AF"/>
+    <!-- Growth leaf and profile contour suggestion -->
+    <path d="M22 10 C29 10 34 16 34 23 C34 31 26 34 22 34 C18 34 10 31 10 23 C10 16 15 10 22 10 Z" fill="#10B981" opacity="0.9"/>
+    <path d="M22 14 C17 19 17 26 22 30 C27 26 27 19 22 14 Z" fill="#FFFAF0"/>
+    <circle cx="22" cy="18" r="2.5" fill="#F97316"/>
+  </g>
+  
+  <!-- Brand text -->
+  <text x="64" y="32" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="700" fill="#0F172A" letter-spacing="-0.5">Psych<tspan fill="#1E40AF">Gyan</tspan></text>
+  <text x="65" y="46" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">BETTER MIND • BRIGHTER FUTURE</text>
+</svg>
